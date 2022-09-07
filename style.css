@@ -22,8 +22,7 @@ header {
 }
 .navbar a {
 	color: white;
-  color: #FFFFFF;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .navbar .logo {
@@ -33,7 +32,7 @@ header {
 
 .navbar .nav-link ul {
 	display: flex;
-  list-style-type: none;
+  	list-style-type: none;
 }
 
 .navbar .nav-link ul li {
