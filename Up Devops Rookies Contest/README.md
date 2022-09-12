@@ -7,7 +7,8 @@ The link to submit your solution is here :
 ### Advice
 
 try to understand what the problem means
-use ```bash
+use 
+```bash
 console.log(input)
 ```
 to figure out the variable
