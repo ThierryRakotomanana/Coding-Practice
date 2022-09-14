@@ -10,16 +10,13 @@ function processData(input) {
         value.pop()
         let valueLength = number.length
         for (let i = 0; i <  valueLength ; i++) {
-            if( i == 0 ){
-                decalage = parseInt(number[i] ) == 0 ? true : false
-                test+= value[ parseInt(number[i]) == 0 ? value.length - 1 : parseInt(VALUE.indexOf(number[i]))]// 
-            }else if( decalage == true){
+            if( i == 0 || decalage == true){
                 decalage = parseInt(number[i] ) == 0 ? true : false
                 if(parseInt(number[i]) == 1 && i== valueLength -1){
                     test = test;
                 }else{
                     test+= value[ parseInt(number[i]) == 0 ? value.length - 1 : parseInt(VALUE.indexOf(number[i]))]
-                }
+                }   
             }else {
                 decalage = false
                 test+= value[parseInt(DECAL.indexOf(number[i]))]
