@@ -8,7 +8,7 @@ The link to submit your solution is here :
 
 try to understand what the problem means
 use 
-```bash
+```javascript
 console.log(input)
 ```
 to figure out the variable
