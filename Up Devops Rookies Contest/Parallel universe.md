@@ -4,30 +4,32 @@ In a parallel universe, they have the same digits but not necessarily in the sam
 
 In this challenge, you are given the digits order of a parallel universe, and a number N, you need to print the N-th number of their system according to our counting system.
 
-Input Format
+	Input Format
 
 The first line of input contains an integer T: the number of parallel universes (test cases).
 Each of the next T lines consists of eleven (11) space separated integers, where
 The first ten (10) represent the order of digits in the concerned universe, consisting of the digits [0-9]
 The eleventh is the number N
-Constraints
 
-1 <= T <= 10^3
+	Constraints
 
-1 <= N <= 10^9
+	1 <= T <= 10^3
 
-Output Format
+	1 <= N <= 10^9
+
+	Output Format
 
 The output should contain T lines, each of which contains an integer, the required answer according to the description.
 
-Sample Input 0
+	Sample Input 0
 
-3
-0 1 2 3 4 5 6 7 8 9 50
-5 1 6 4 0 7 8 2 9 3 50
-3 6 0 5 2 4 1 9 7 8 100
-Sample Output 0
+	3
+	0 1 2 3 4 5 6 7 8 9 50
+	5 1 6 4 0 7 8 2 9 3 50
+	3 6 0 5 2 4 1 9 7 8 100
+	
+	Sample Output 0
 
-49
-3
-88
+	49
+	3
+	88
