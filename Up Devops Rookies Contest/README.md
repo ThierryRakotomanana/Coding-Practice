@@ -13,7 +13,13 @@ console.log(input)
 ```
 to figure out the variable
 
-
+## How To 
+Read the markdown file for description of the problem
+Try to solve it
+### List of the problem
+- [Parallel Universe](https://github.com/ThierryRakotomanana/Coding-Practice/blob/main/Up%20Devops%20Rookies%20Contest/Parallel%20universe.md)
+- [Overweight](https://github.com/ThierryRakotomanana/Coding-Practice/blob/main/Up%20Devops%20Rookies%20Contest/Overweight-Problem.md)
+- [The battery Leve](https://github.com/ThierryRakotomanana/Coding-Practice/blob/main/Up%20Devops%20Rookies%20Contest/The%20battery%20level.md)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
