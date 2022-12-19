@@ -24,7 +24,7 @@ body {
     color: var(--clr-neutral-100);
     background: url(card-bg.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
+    padding: 1rem 0 0;
     max-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
