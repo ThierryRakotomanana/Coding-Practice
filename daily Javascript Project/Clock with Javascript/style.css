@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #7bf8cd;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    background-color: #ffb900;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #56466d;
+    border-radius: 500px;
+    box-shadow: 2px 1.5px 3px hsl(0, 1%, 28%);
+}
+
+svg {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+    width: 35px;
+}
+
+.number div{
+ position: absolute;
+ font-size: 25px;
+ font-weight: bold;
+ color: whitesmoke;
+ text-shadow: 1px 1px 2px #6c6e72;;
+}
+
+.twelve {
+    left: 50%;
+    transform: translate(-50%);
+    top: 5%;
+}
+
+.six {
+    right: 50%;
+    transform: translate(50%);
+    bottom: 5%;
+}
+
+.three {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+.nine {
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 5%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50px;
+    z-index: 5;
+}
+
+.row div {
+    width: 7px;
+    position: absolute;
+    transform-origin: bottom center;
+    bottom: 50%;
+    border: 0.5px solid rgba(90, 90, 90, 0.7);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hour {
+    height: 40%;
+    transform: rotate(30deg);
+    background-color: #2f5091;
+    z-index: 1;
+}
+
+.minute {
+    height: 30%;
+    transform: rotate(130deg);
+    background-color: hsl(166deg 65% 73%);
+    z-index: 2;
+}
+.second {
+    height: 20%;
+    transform: rotate(250deg);
+    background-color: aliceblue;
+    z-index: 3;
+}
