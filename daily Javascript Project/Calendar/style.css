@@ -1,4 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
     background-color: rgb(28, 28, 58);
     color: aliceblue;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.calender {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 10%;
 }
