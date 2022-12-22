@@ -1,3 +1,8 @@
+:root {
+    --size-of-box: 50%;
+    --height : 10%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +11,57 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: rgb(28, 28, 58);
+    background-color: rgb(26, 26, 104);
     color: aliceblue;
 }
 
 .container {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+    width: 450px;
+    margin: 0 auto;
+    height: 350px;
+    background-color: rgb(156, 143, 143);
 }
 
 .calender {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: var(--size-of-box);
     transform: translateX(-50%);
-    width: 50%;
-    height: 10%;
+    width: 100%;
+    height: 65px;
+}
+
+.weekdays {
+    position: absolute;
+    top: 65px ;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    position: absolute;
+    top: 100px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.days div {
+    margin: 3px;
+    width: 13%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: 1px;
+}
+.days div:hover{
+    border: 1px solid white;
+    cursor: pointer;
 }
