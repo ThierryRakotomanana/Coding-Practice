@@ -8,14 +8,8 @@ body {
     background-color: #999;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
-}
-
-.card-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 375;
 }
 
 .container {
@@ -23,8 +17,31 @@ body {
     margin: 0 auto 10px auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "first first second" 
+                        "third four second" 
+                        "third five five" ;
+    gap: 5px;
+}
+
+.card-first-bg:nth-of-type(1) {
+    grid-area: "first";
+}
+
+.card-first-bg:nth-of-type(2) {
+    grid-area: "second";
+}
+
+.card-first-bg:nth-of-type(3) {
+    grid-area: "third";
+}
+
+.card-first-bg:nth-of-type(4) {
+    grid-area: "four";
+}
+.card-first-bg:nth-of-type(5) {
+    grid-area: "five";
 }
 
 .card-first-bg {
@@ -42,6 +59,22 @@ body {
     align-items: center;
 }
 
+.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.card-lead {
+    width: 10;
+}
+
+.card-quote {
+    width: 10;
+}
+
+/*
 .card-first-bg:nth-of-type(1) {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -92,7 +125,7 @@ body {
         grid-row: 5 ;
     }
 }
-
+*/
 /*-- Post --*/
 
 .card-container {
